@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { PolicyService } from './policy.service';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,10 @@ export class AppComponent implements OnInit{
   SERVER_URL: string = "http://localhost:8080/api/";
 
   policies: any[] = [];
-  constructor(private httpClient: HttpClient) { }
+  constructor(private policyService: PolicyService) { }
 
   ngOnInit() {
-    this.httpClient.get(this.SERVER_URL + 'policies').subscribe((data : any[])=>{
+    this.policyService.getPolicies().subscribe((data : any[])=>{
         console.log(data);
         this.policies = data;
     })
