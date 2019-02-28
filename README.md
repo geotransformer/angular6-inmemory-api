@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.6.
 
+The angular-in-memory-web-api module provides an in memory data store where you can create and fetch data and simulates a real REST API back-end. 
+
+Reference:
+https://www.techiediaries.com/angular-inmemory-web-api/
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
