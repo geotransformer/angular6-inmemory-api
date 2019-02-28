@@ -16,7 +16,10 @@
       <td>{{  policy.amount }}</td>
       <td>{{  policy.description }}</td>
   
-      <td>tbd</td>
+      <td>
+        <button (click)="deletePolicy(policy)">Delete</button>
+        <button (click)="updatePolicy(policy)">Update</button>
+        </td>
     </tr>
   </table>
 

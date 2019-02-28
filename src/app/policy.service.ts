@@ -12,4 +12,8 @@ export class PolicyService {
   public getPolicies(){ 
        return this.httpClient.get(this.SERVER_URL + 'policies');
   }
+
+  public deletePolicy(policyId){
+    return this.httpClient.delete(`${this.SERVER_URL + 'policies'}/${policyId}`);
+}
 }
